@@ -142,6 +142,6 @@ app.post("/get-buss-pass",async (req,res)=>{
 
 })
 
-app.listen(8080, (req, res) => {
-  console.log("server started on port " + 8080);
+app.listen(process.env.PORT || 8080, (req, res) => {
+  console.log("server started on port " + (process.env.PORT || 8080));
 });
